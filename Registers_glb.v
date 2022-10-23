@@ -1,6 +1,6 @@
 module Registers_glb();
     integer Registers[15:0];
-    reg[15:0] Availability;
+    integer Availability[15:0];
     integer a;
     initial begin
         for(a=0;a<16;a++)begin

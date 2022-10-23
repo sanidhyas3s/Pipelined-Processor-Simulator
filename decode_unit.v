@@ -38,9 +38,10 @@ module decode_unit(
                     rs = instruction[11:8];
                     if(!Registers_glb.Availability[rs] | !Registers_glb.Availability[rt])
                         stall = 1'b1;
-                    else
+                    else begin
                         stall = 1'b0;
-                    Registers_glb.Availability[rd] = 0;
+                        Registers_glb.Availability[rd] = 0;
+                    end
                     shamt = instruction[7:4];
                     funct = instruction[3:0];
                 end

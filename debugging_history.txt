@@ -129,3 +129,6 @@ $displayb(read_data);
                         endcase
 // reg[3:0] Op;                                //For AluOp
 
+        else
+            $display("Stalled");
+                                        $display("Writeback 1",rd_int);

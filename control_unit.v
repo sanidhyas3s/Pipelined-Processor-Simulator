@@ -1,4 +1,5 @@
 // `include "fetch_unit.v"
+// `include "clock.v"
 
 module control_unit(
     input clk,
@@ -55,7 +56,7 @@ always @(posedge clk) begin
                     end
             4'b0100 :   begin                     //Jump instruction
                         RegDst = 1'b0;
-                        RegWrite = 1'b1;
+                        RegWrite = 1'b0;
                         ALUSrc = 1'b1;
                         MemWrite = 1'b0;
                         MemRead = 1'b0;

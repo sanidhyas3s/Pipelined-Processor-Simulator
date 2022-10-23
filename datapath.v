@@ -47,7 +47,6 @@ Register Register (.clk(clk), .stall_in(stall1), .stall_out(stall2),.rs(rs_dr), 
 //---------------------------------------------------Execution Unit------------------------------------------------------------------------------------------------
 
 ALU ALU (.clk(clk), .stall_in(stall2), .stall_out(stall3), .ALUOp(ALUOp1), .read_data1(read_data1), .read_data2(read_data2), .imm_value(imm_value), .badr(badr), .jadr(jadr), .result(alu_output1), .Zero(zero), .rs_in(rs_dr), .rt_in(rt_dr), .rd_in(rd_dr), .lsadr_in(lsadr1), .rs_out(rs_em), .rt_out(rt_em), .rd_out(rd_em), .lsadr_out(lsadr2), .Jump(Jump2), .Branch(Branch2), .ALUSrc(ALUSrc2), .RegDst_in(RegDst2), .MemRead_in(MemRead2), .MemtoReg_in(MemtoReg2), .MemWrite_in(MemWrite2), .RegWrite_in(RegWrite2), .RegDst_out(RegDst3), .MemRead_out(MemRead3), .MemtoReg_out(MemtoReg3), .MemWrite_out(MemWrite3), .RegWrite_out(RegWrite3));
-//ALU_Control_Signal ignored for now
 
 //---------------------------------------------------Memory Access Unit--------------------------------------------------------------------------------------------
 

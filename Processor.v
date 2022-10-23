@@ -1,6 +1,5 @@
 `include "datapath.v"
 `include "control_unit.v"
-`include "ALU_Control.v"
 `include "clock.v"
 `include "Program_Counter.v"
 `include "Registers_glb.v"
@@ -18,5 +17,4 @@ module Processor();
 
     pipeline pipeline (.clk(clk), .instruction(instruction), .ALU_Control_Signal(ALU_Control_Signal), .RegDst(RegDst), .Jump(Jump), .Branch(Branch), .MemRead(MemRead), .MemtoReg(MemtoReg), .ALUOp(AluOp), .MemWrite(MemWrite), .ALUSrc(ALUSrc), .RegWrite(RegWrite));
 
-    // ALU_Control ALU_Control (.clk(clk),.ALUOp(AluOp), .ALU_Control_Signal(ALU_Control_Signal));
 endmodule
