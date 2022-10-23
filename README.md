@@ -41,3 +41,8 @@ Store - `< R1 5`
 - Comments can be written without any syntax before `{` and after `}`.
 - Total 16 registers are present (`R0` to `R15`).
 
+## Contributors
+Anikesh Parashar, Sanidhya Singh, Sahil Safy, Tanmay Shrivastav, Prerna, Ayushka Sahu.
+
+Made as Course Project for CSN221 (IITR)
+
