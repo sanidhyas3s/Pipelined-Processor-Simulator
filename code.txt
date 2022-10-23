@@ -1,0 +1,11 @@
+This code finds the factorial of 6
+{
+    +i R4 R0 6
+    +i R1 R0 1
+    +i R2 R0 1
+    ^= R4 R1 7
+    +i R1 R1 1
+    * R3 R2 R1
+    +i R2 R3 0
+    ^ 3
+}

@@ -1,0 +1,131 @@
+$display("alu");
+$displayb(imm_value);
+$display("ALU");
+$display("00000000000001111111111111111111111100000000000000000000");
+$display(ALUOp);
+$display(read_data1);
+$display(read_data);
+$displayb(read_data);
+                    $display("0000bbbbbbbbbbbbbbbbbbbbbbb0000000001111111111111111111111100000000000000000000");
+                    // $display(rd_in);
+                    $display("00000000000001111111111111111111111100000000000000000000");
+                    $display(result);
+            $display("Its jump");
+                $display("zero hua");
+            $display("branch toh ho rha",Zero);
+    // input Registers[15:0],
+    // input RegDst,
+    // input RegWrite,
+    // input Branch,
+// `include "control_unit.v"
+    // input MemWrite,
+    //We have changed reg to wire
+    // wire[23:0] instruction1;                
+                           ///"---"
+//--------------------------------------------------Registers------------------------------------------------------------------------------------------------------
+// integer result;
+         //shamt removed
+        $display("WB Stalled");
+    $display("WriteBack");
+    $display(alu_result);
+                                        // $display(rd_int);
+                                        // result = alu_result;                                        // $display("RegDst = 0");
+                                        // $display(rt_int);
+            $display("Branch in Register Out ",Branch_in);
+                                        // $displayb(alu_result);                                        $displayb(Registers_glb.Registers[rs_int]);
+                                                    $display("reg");
+            $displayb(RegWrite_in);
+            $displayb(RegDst_in);
+            $displayb(Branch_in);
+                $display("I am R-type"); 
+            $displayb(MemWrite_in);                // $display("Register ");
+                // $display(rs_index);
+                // $displayb(Registers_glb.Registers[rs_index]);                //   $display(rt_index);
+                $display("I am I-type");
+                // $displayb(Registers_glb.Registers[rt_index]);                // $display("Register ");
+                // $display(rs_index);
+                // $displayb(Registers_glb.Registers[rs_index]);                $displayb(read_data1);
+            // $displayb(read_data1);
+                $displayb(rt);
+                    Registers[5]=3;
+    // Registers[0] = 0;
+ //if we dont take every register 0 then alu wouldnt give result as of now;
+    // fd = $fopen("myfile.txt","w");
+// PC is a global variable.
+    $display("fetch");
+    $display(Program_Counter.PC);
+     // $displayb(ic[0]);
+         input fetch_stall,
+    // output
+    $displayb(instruction);
+    input fetch_stall_ALU, // input RegDst_in, Jump_in, Branch_in, MemRead_in, MemtoReg_in, MemWrite_in, ALUSrc_in, RegWrite_in,
+    // output reg RegDst_out, Jump_out, Branch_out, MemRead_out, MemtoReg_out, MemWrite_out, ALUSrc_out, RegWrite_out,        // RegDst_out = RegDst_in;
+        // $display(decode);
+        // $display(RegDst_out);
+        // Jump_out = Jump_in;
+        // Branch_out = Branch_in;
+        // MemRead_out = MemRead_in;
+        // MemtoReg_out = MemtoReg_in;
+        // MemWrite_out = MemWrite_in;
+        // ALUSrc_out = ALUSrc_in;
+        // RegWrite_out = RegWrite_in;
+                // jump_stall_out = jump_stall_in;
+        // if(!jump_stall_in) begin
+                // $displayb(shamt);
+                // $display(clk);
+    input jump_stall_in,
+        //#10 //added to ensure decode a                $displayb(rs);
+                $displayb(rt);
+                $displayb(rd);
+                $displayb(shamt);
+                $displayb(funct);                $displayb(rs);
+                $displayb(rt);
+                $displayb(imm);
+                $displayb(funct);
+            $display(Program_Counter.PC);
+    // input [3:0]rd,
+        $display("DM Stalled");
+        $display("Memory");
+        $display(result_out);
+                        $display(result);
+                                                $display("Control Unit");
+                        $displayb(RegWrite);
+                        $displayb(RegDst);
+                        $displayb(Branch);
+                        $displayb(MemWrite);                        // $display("111111111111111199999999999999999999999999999999999999999999999999999999999999999999999999999");
+                        $displayb(Op);                        // $display("Control Unit");
+                        // $displayb(RegWrite);
+                        // $displayb(RegDst);
+                        // $displayb(Branch);
+                            $display("00000099999999999888888888888877777777777777777"); 
+                        // $displayb(MemWrite);            
+            // 4'bxxxx :   begin
+            //             RegDst = 1'b0;
+            //             RegWrite = 1'b0;
+            //             ALUSrc = 1'b0;
+            //             MemWrite = 1'b0;
+            //             MemRead = 1'b0;
+            //             MemtoReg = 1'b0;
+            //             Jump = 1'b0;
+            //             Branch = 1'b0;
+            //             ALUOp = 4'b0000;
+            //         end
+                lways runs after fetch                       //R-type instruction             $display("Decode Stalled");
+                    // $display("control");
+    // $displayb(Opcode);
+          //For type of instruction
+// Opcode = instruction[23:20];       //For type of instruction
+    // input ALUSrc,
+    // input ALUSrc,
+    // input [3:0] Opcode,
+    // input integer PC,
+                    $displayb(read_data1);
+                $displayb(read_data);
+                                        case(Op)
+                            4'b0001 : ALUOp = 4'b0001;      //+ instruction
+                            4'b0010 : ALUOp = 4'b0010;      //- instruction
+                            4'b0100 : ALUOp = 4'b0100;      //& instruction
+                            4'b1000 : ALUOp = 4'b1000;      //| instruction
+                        endcase
+// reg[3:0] Op;                                //For AluOp
+
